@@ -1,0 +1,24 @@
+.contNavbar{
+    background: rgb(10,12,23);
+    background: radial-gradient(circle, rgba(10,12,23,0.9445028011204482) 50%, rgba(83,186,96,1) 100%);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.contItemsRedes{
+    display: flex;
+}
+.iconoInsta, .itemGithub, .itemLinkedin{
+    color: aliceblue;
+}
+.contItemContacto{color: aliceblue;}
+
+
+
+
+/* 
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+*/
