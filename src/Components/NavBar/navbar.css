@@ -1,9 +1,8 @@
 .contNavbar{
     background: rgba(10, 12, 23, 0.81);
     /* background: radial-gradient(circle, rgba(10, 12, 23, 0.311) 50%, rgba(83, 186, 97, 0.004) 100%); */
-    
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content:space-around;
