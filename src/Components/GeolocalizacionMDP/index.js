@@ -17,7 +17,7 @@ function GeolocalizacionMDP() {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyAzuhKHAcTqszIOGRRg80meXZOfA9SEdD4"
+        googleMapsApiKey: "TU APIKEY" /* ---> TU APIKEY <---*/
     })
     
     const [map, setMap] = React.useState(null)
@@ -28,7 +28,7 @@ function GeolocalizacionMDP() {
         map.fitBounds(bounds);
     
         setMap(map)
-    }, [])
+    }, []);
     
     const onUnmount = React.useCallback(function callback(map) {
         setMap(null)
