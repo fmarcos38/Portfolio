@@ -1,0 +1,35 @@
+.contLanding{
+    background-image: url('../../imagenes/matrixGif.gif');
+    height: 100vh;
+}
+.contImagTexto{
+    background-color: black;    
+    display:flexbox;
+    text-align: center;
+    justify-content:center;
+    margin-top: 10%;    
+    height: 350px;
+}
+.gifP{
+    border-radius: 30px;
+    width: 200px;
+}
+.contTexto1{
+    color: white;
+    font-size: 25px;
+}
+.contTexto2{
+    color: white;
+    font-size: 25px;
+}
+.linkCiudad{
+    color: white;
+    text-decoration: none;
+}
+.contLocalizImg{    
+    align-items: center;
+    justify-content:space-between
+}
+.imagenes{
+margin-left: 10px;
+}
