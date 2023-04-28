@@ -37,7 +37,7 @@ function Navbar() {
                     </a>
                 </div>           
                 <div>
-                    <a href='whatsapp' className='itemWhatsApp'>
+                    <a href={whatsapp} className='itemWhatsApp'>
                         <WhatsAppIcon/>
                     </a>
                 </div>

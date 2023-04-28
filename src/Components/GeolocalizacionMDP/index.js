@@ -18,7 +18,7 @@ function GeolocalizacionMDP() {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_APIKEY, /* ---> TU APIKEY <---*/
+        googleMapsApiKey: "AIzaSyAzuhKHAcTqszIOGRRg80meXZOfA9SEdD4", /* ---> TU APIKEY <---*/
     })
     
     const [, setMap] = React.useState(null)

@@ -8,6 +8,7 @@ import GeolocalizacionMDP from '../GeolocalizacionMDP';
 
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ListaProyectos from '../ListaProyectos';
+import FormularioContacto from '../FormContacto';
 
 /* import { Link } from 'react-router-dom';
 import GeolocalizacionMDP from '../GeolocalizacionMDP'; */
@@ -51,7 +52,7 @@ function LandingPage() {
                             <button type="button" class="btn btnGeoloc" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <LocationOnIcon/> Argentina, Bs As, Mar del Plata
                             </button>
-    {                        /* btn lanza modal2 */}
+                            {/* btn lanza modal2 */}
                             <button type="button" class="btn btnGeoloc" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
                                 - Conoce mi ciudad -
                             </button>                
@@ -94,7 +95,12 @@ function LandingPage() {
             
             {/* Muestra proyetos */}
             <div id="proyectos">
-            <ListaProyectos/>
+                <ListaProyectos/>
+            </div>
+
+            {/* formulario de contacto */}
+            <div id="contacto">
+                <FormularioContacto/>
             </div>
             
         </div>

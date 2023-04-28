@@ -28,7 +28,7 @@ const initialState = {
             descripcion: 'Portfolio personal',
             tecnologiasUtilizadas: 'Html - CSS - SCSS - Materia UI - Bootstrapt - React - Redux - Javascript - Api GoogleMaps - Vercel - NPM',
             linkGithubFront: 'https://github.com/fmarcos38/Portfolio',
-            linkURL: 'https://portfolio-i8wucf1pl-fmarcos38.vercel.app/',
+            linkURL: 'https://marcos-forastiere-portfolio.vercel.app/',
             imag1: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682635512/ScreenShot059_bl4u9j.bmp',
             imag2: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682639378/ScreenShot060_qexwfu.bmp',
             imag3: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682635512/ScreenShot059_bl4u9j.bmp',
