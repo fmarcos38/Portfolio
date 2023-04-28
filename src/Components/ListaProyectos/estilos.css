@@ -1,0 +1,13 @@
+.contListaP{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contListaP2{    
+    width: 85%;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+}

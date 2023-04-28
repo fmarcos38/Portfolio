@@ -3,7 +3,7 @@ import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 //ancho y largo vista mapa
 const containerStyle = {
-    width: '400px',
+    width: '100%',
     height: '400px'
 };
 //lat y lon de mar del plata
@@ -17,7 +17,7 @@ function GeolocalizacionMDP() {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "TU APIKEY" /* ---> TU APIKEY <---*/
+        googleMapsApiKey: process.env.googleMapsApiKey /* ---> TU APIKEY <---*/
     })
     
     const [map, setMap] = React.useState(null)

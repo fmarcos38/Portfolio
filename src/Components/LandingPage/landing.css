@@ -1,14 +1,23 @@
 .contLanding{
     background-image: url('../../imagenes/matrixGif.gif');
-    height: 100vh;
+    height: 100%;
+}
+.cont2{
+    display:flex;
+    align-items: center;
+    justify-content:center;
 }
 .contImagTexto{
     background-color: black;    
     display:flexbox;
     text-align: center;
     justify-content:center;
-    margin-top: 10%;    
-    height: 350px;
+    margin-top: 7%;
+    width: 85%;    
+    height: 470px;
+}
+.contGif{
+    margin-top: 2rem;
 }
 .gifP{
     border-radius: 30px;
@@ -21,14 +30,24 @@
 .contTexto2{
     color: white;
     font-size: 25px;
+    margin-top: 3rem;
 }
-.linkCiudad{
-    color: white;
-    text-decoration: none;
+.btnPersonal, .btnPersonal2{    
+    margin-top: 2rem;
+    margin-right: 3rem;
+    padding: 5px 10px;    
 }
-
-.imagenes{
-margin-left: 10px;
+.contLocalizImg{
+    margin-top: 6rem;
 }
-
+.btnGeoloc{
+background-color: black;
+color: darkgray;
+}
+.btnGeoloc:hover{
+    color: green;
+}
+.modal1{
+    margin-top: 2.5rem;
+}
 
