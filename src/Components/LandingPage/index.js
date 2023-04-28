@@ -43,10 +43,10 @@ function LandingPage() {
                         <Link>
                             <button className='btnPersonal2'>hover</button>
                         </Link>
-                        </div>
+                    </div>
 
-                        {/* btn geoloc */}
-                        <div className='contLocalizImg'>
+                    {/* btn geoloc */}
+                    <div className='contLocalizImg'>
                             {/* btn lanza modal */}
                             <button type="button" class="btn btnGeoloc" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <LocationOnIcon/> Argentina, Bs As, Mar del Plata
@@ -61,7 +61,7 @@ function LandingPage() {
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Mar del Plata</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">

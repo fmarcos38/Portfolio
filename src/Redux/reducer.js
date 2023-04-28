@@ -9,9 +9,9 @@ const initialState = {
             linkGithubFront: 'https://github.com/fmarcos38/Elve-Front',
             linkGithubBack: 'https://github.com/fmarcos38/Elven-Back',
             linkURL: 'https://elven-coffee.vercel.app/',
-            imag1: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682634998/Landing_ddd4qp.bmp',
-            imag2: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682635016/menuElven_wgyfqx.bmp',
-            imag3: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682635044/imagenMenu_yfvv8w.bmp',
+            imag1: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682687061/ScreenShot063_srxfwz.bmp',
+            imag2: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682685671/ScreenShot062_xty87a.bmp',
+            imag3: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682683463/ScreenShot061_cvvw6n.bmp',
         },
         {
             titulo: 'Landing Page - Agencia de motos', 

@@ -6,3 +6,21 @@
     width: 50px;
     height: 30px;
 }
+.card-header{
+    background-color: rgb(115, 114, 111);
+    color:aqua
+}
+.card-body{
+    background-color: rgb(128, 127, 125);
+    color: #fff;
+}
+.card-footer{
+    background-color: rgb(115, 114, 111);
+}
+.tituloD{
+    color: aqua;
+}
+.links{
+    color: aqua;
+    text-decoration: none;
+}

@@ -16,25 +16,20 @@ function CardProyecto({titulo, descripcion, tecnologiasUtilizadas, linkGithubFro
         <div class="card-body">
             {/* carrusel */}
             <Carrusel imag1={imag1} imag2={imag2} imag3={imag3}/>
-            <p>Descripción:</p>
+            <p className='tituloD'>Descripción:</p>
             <p>{descripcion}</p>
-            <p>Tecnologías utilizadas:</p>
-            <p>{tecnologiasUtilizadas}</p>            
-            <a href={linkGithubFront}><LinkIcon/>Link Github Frontend</a>
-            <br></br>
-            {
-                linkGithubBack && <a href={linkGithubBack}><LinkIcon/>Link Github Backend</a>
-            }
-            <br></br>
-            <a href={linkURL}><LinkIcon/>Link Página</a>
-
-            
+            <p className='tituloD'>Tecnologías utilizadas:</p>
+            <p>{tecnologiasUtilizadas}</p>        
         </div>
 
         <div class="card-footer text-muted">
-            <h5>Skills</h5>
-            <img src='https://w7.pngwing.com/pngs/574/164/png-transparent-react-computer-icons-redux-javascript-others-symmetry-electron-redux.png'
-                alt='not found' className='simboloSkill'/>
+        <a href={linkGithubFront} className='links'><LinkIcon className='links'/>Link Github Frontend</a>
+            <br></br>
+            {
+                linkGithubBack && <a href={linkGithubBack} className='links'><LinkIcon className='links'/>Link Github Backend</a>
+            }
+            <br></br>
+            <a href={linkURL} className='links'><LinkIcon className='links'/>Link Página</a>
         </div>
     </div>
     )

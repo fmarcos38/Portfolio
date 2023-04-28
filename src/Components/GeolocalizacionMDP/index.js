@@ -14,10 +14,11 @@ const center = {
 
 
 function GeolocalizacionMDP() {
+    
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: process.env.googleMapsApiKey /* ---> TU APIKEY <---*/
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_APIKEY, /* ---> TU APIKEY <---*/
     })
     
     const [map, setMap] = React.useState(null)
