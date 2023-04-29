@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300);
 
-.btnPersonal, .btnPersonal2, .btnPersonal3{
+.btnPersonal, .btnPersonal2, .btnPersonal3, .btnEnviar{
     position: relative;
   /* @include center; */
     background: #333;
@@ -43,7 +43,7 @@
     transform: translateX(-100px) skewX(-15deg);
     }
     &:hover{
-    background: #338033;
+    background: #38a028;
     cursor: pointer;
     &:before{
         transform: translateX(300px)  skewX(-15deg);  

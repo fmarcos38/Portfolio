@@ -1,18 +1,22 @@
 .contGralForm{
     margin-top: 3rem;
-    margin-left: 7.5rem;
-    
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;    
-}
-.contForm{
-    background-color: black;
-    margin-bottom: 2rem;
-    display:flexbox;
-    align-items: center;
+    /* margin-left: 7.5rem; */
+    display:flexbox;    
     justify-content:center;
-    width: 55%;
+}
+.tituloForm{
+    color:aqua;
+    text-align: center;
+}
+.divContForm{
+    display:flex;
+    align-items: center;
+    justify-content:center;  
+}
+.contForm{    
+    width: 42%;
+    background-color: rgb(17, 17, 17);
+    margin-bottom: 2rem;
     color: #fff;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -21,35 +25,38 @@
 }
 input, textarea {
     border: 1px solid #ccc;
+    color: #fff;
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
-}
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-left: 0.5rem;
-    margin-bottom: 0.3rem;
-}
-button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: gray;
 }
 label {
-    margin-left: 2rem;
+    margin-left: 3.5rem;
     text-align: start;
     width: 100px;
     text-align: left;
     color: #2fcf16;
 }
 /* Alinear los campos de entrada en una sola línea: */
-input[type="text"], input[type="email"], input[type="tel"], textarea {
-    
-    width: 80%;
+input[type="text"], input[type="email"], input[type="tel"], textarea {    
+    width: 84%;
+    margin-left: 3rem;
     box-sizing: border-box;
 }
-  
+/* camb apariencia cursor */
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    cursor: pointer;
+}
+input[type="text"] {
+    transition: border 0.3s ease-in-out;
+}
+button[type="submit"] {    
+    padding: 5px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 3rem;
+    margin-bottom: 0.3rem;
+}
