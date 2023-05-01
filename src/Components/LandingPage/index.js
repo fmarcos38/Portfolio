@@ -10,6 +10,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ListaProyectos from '../ListaProyectos';
 import FormularioContacto from '../FormContacto';
 import MuestraSkills from '../Skills';
+import About from '../About';
 
 /* import { Link } from 'react-router-dom';
 import GeolocalizacionMDP from '../GeolocalizacionMDP'; */
@@ -37,14 +38,14 @@ function LandingPage() {
                     {/* btn personales */}
                     <div className='contBtnPersonales'>
                         <a href="#proyectos">
-                            <button className='btnPersonal'>Proyectos</button>
+                            <button className='btnPersonal'>Proyects</button>
                         </a>
                         <a href='#skills'>
                             <button className='btnPersonal2'>Skills</button>
                         </a>
-                        <Link>
-                            <button className='btnPersonal2'>hover</button>
-                        </Link>
+                        <a href='#about'> 
+                            <button className='btnPersonal2'>About Me</button>
+                        </a>
                     </div>
 
                     {/* btn geoloc */}
@@ -105,6 +106,12 @@ function LandingPage() {
                 <h2 className='tituloSkills'>Skills</h2>
                 <MuestraSkills/>
             </div>            
+
+            {/* Muestra Skills */}
+            <div id="about">
+                <h2 className='tituloSkills'>About me</h2>
+                <About/>
+            </div>
 
             {/* formulario de contacto */}
             <div id="contacto">

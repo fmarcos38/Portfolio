@@ -1,0 +1,26 @@
+.conGralAbout{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+.contAbout{   
+    background-color: black;
+    display:flexbox;
+    text-align: center;
+    justify-content:center;
+    width: 85%; 
+}
+.imgYo{
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.aboutMe{    
+    justify-content:center;
+    color: aliceblue;
+}
