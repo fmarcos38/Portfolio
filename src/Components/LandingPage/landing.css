@@ -50,4 +50,10 @@ color: darkgray;
 .modal1{
     margin-top: 2.5rem;
 }
-
+.tituloP{
+    text-align: center;
+    color: aqua;
+    margin-top: 60px;
+    background-color: black;
+    margin-bottom: 0;
+}
