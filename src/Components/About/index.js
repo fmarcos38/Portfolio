@@ -10,17 +10,15 @@ function About() {
                 <img src={imgYo} alt='not found' className='imgYo'/>
                 <div className='contTexto'>
                 <span className='aboutMe'>
-                    👋 ¡Hola, soy Leandro! 📑 En 2021 di un giro a mi carrera profesional como productor audiovisual 🎥 
-                    y comencé mis estudios en la academia Henry para formarme como Programador Full-Stack con orientación 
-                    Front-End! Con más de +800 horas de pura práctica con programación 💥, 
-                    ahora tengo la experiencia trabajando con Javascript, Html, Css, React ⚛️, 
-                    Redux entre otras tecnologías. Tengo amplios conocimientos en el mundo del diseño, 
-                    estética visual y sonora. Me manejo perfectamente con el inglés. 
-                    Actualmente sigo reforzando mis conocimientos con React JS, React Native, TypeScript 
-                    y poco a poco voy profundizando en el código BlockChain. ⚡️ 
-                    Soy una persona muy paciente, flexible y sociable. 
-                    ¡Sé trabajar muy bien en equipo y me encanta estar siempre detrás de las últimas tendencias 
-                    y tecnología de punta! 💻📚🌍
+                    👋 ¡Hola, soy Marcos! En agosto del 2021 di un giro en mi vida y comencé mis estudios 
+                    en la academia Soy Henry para formarme como Programador Full-Stack!. Con más de 800 horas teórico/prácticas 💥, 
+                    desde entonces no ha pasado un día en el que programe (salvo los domingos jeje). 
+                    Actualmente estoy realizando un curso PHP, próximamente en Python, docker ⚡️ 
+                    Soy una persona paciente, proactiva, autodidacta, apasionado por la tecnología, los viajes, el deporte y la música,
+                    flexible, sociable y con capacidad de liderazgo. 
+                    Por todo ello, creo que puedo contribuir de manera significativa al éxito de su empresa.
+                    ¡Sé trabajar muy bien en equipo y me encanta estar siempre detrás de las 
+                    últimas tendencias y tecnología de punta! 💻
                 </span>
                 </div>                
             </div>
