@@ -24,3 +24,10 @@
     color: aqua;
     text-decoration: none;
 }
+
+@media screen and (max-width:900px){
+    .contCard{
+        width: 70%;
+        margin-top: 30px;
+    }
+}

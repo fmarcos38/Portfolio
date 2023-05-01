@@ -62,3 +62,28 @@ button[type="submit"] {
     margin-left: 3rem;
     margin-bottom: 0.3rem;
 }
+
+@media screen and (max-width:1000px) and (min-width: 451px){
+    .contForm{    
+        width: 70%;
+    }
+}
+@media screen and (max-width: 450px){
+    .contForm{    
+        width: 80%;
+    }
+    input, textarea {
+        padding: 5px;
+        margin: 1px;
+    }
+    label {
+        margin-left: 1rem;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+        margin-left: 1rem;
+    }
+    button[type="submit"] {
+        width: 80%;
+        margin-left: 1rem;
+    }
+}

@@ -31,3 +31,12 @@
     margin-right: 10px;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 450px){
+    .logoReact, .logoJS, .logoRedux{
+        width: 100px;
+        height: 70px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}

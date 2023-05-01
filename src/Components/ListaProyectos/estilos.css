@@ -11,3 +11,9 @@
     flex-wrap: wrap;
     margin-top: 0;
 }
+
+@media screen and (max-width: 650px){
+    .contListaP2{    
+        width: 90%;
+    }
+}
