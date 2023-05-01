@@ -102,7 +102,7 @@ function LandingPage() {
 
             {/* Muestra Skills */}
             <div id="skills">
-                <h2 className='tituloP'>Skills</h2>
+                <h2 className='tituloSkills'>Skills</h2>
                 <MuestraSkills/>
             </div>            
 

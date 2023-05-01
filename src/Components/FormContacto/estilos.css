@@ -7,6 +7,8 @@
 .tituloForm{
     color:aqua;
     text-align: center;
+    background-color: black;
+    margin-bottom: 0;
 }
 .divContForm{
     display:flex;

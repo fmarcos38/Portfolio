@@ -2,20 +2,19 @@
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 90%;
     height: 400px;
-    background-color: black;
-
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 .contSkills{   
+    background-color: black;
     display:flexbox;
     text-align: center;
     justify-content:center;
     width: 85%; 
 }
 .logoReact{
-    width: 230px;
+    width: 200px;
     height: 130px;
     margin-right: 10px;
     border-radius: 20px;
