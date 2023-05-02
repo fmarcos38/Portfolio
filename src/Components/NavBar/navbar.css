@@ -11,6 +11,9 @@
     display: flex;
     align-items: center;
     justify-content:space-around;
+
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 .iconoInsta, .itemGithub, .itemLinkedin, .itemContacto, .itemTextoCont, .itemWhatsApp{
     color: aqua;
@@ -21,7 +24,29 @@
     align-items: center;
     justify-content:space-around;
     color: aqua;
+
+    animation-duration: 4s;
+    animation-name: slidein;
 }
+/*animación*/
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    /* 75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    } */
+}
+/* -------------------------------- */
 
 
 @media screen and (max-width: 300px){

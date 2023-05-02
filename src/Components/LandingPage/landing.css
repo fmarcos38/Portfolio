@@ -40,13 +40,24 @@
 .contLocalizImg{
     margin-top: 6rem;
 }
+
 .btnGeoloc{
 background-color: black;
 color: darkgray;
 }
 .btnGeoloc:hover{
-    color: green;
+    color: rgb(20, 229, 20);
+    animation: btnGeoloc 0.5s 1;
 }
+@keyframes btnGeoloc{
+    25%,85%{
+        transform: scale(0.8)
+    }
+    50%{
+        transform: scale(1.1)
+    }
+}
+
 .modal1{
     margin-top: 2.5rem;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import "./landing.css";
 import "./botones.scss";
 import Navbar from '../NavBar';
@@ -11,9 +10,11 @@ import ListaProyectos from '../ListaProyectos';
 import FormularioContacto from '../FormContacto';
 import MuestraSkills from '../Skills';
 import About from '../About';
+import Carrusel from '../Carrusel';
 
-/* import { Link } from 'react-router-dom';
-import GeolocalizacionMDP from '../GeolocalizacionMDP'; */
+import mdp1 from "../../imagenes/mdp1.jpg";
+import mdp2 from "../../imagenes/mdp2.jpg";
+import mdp3 from "../../imagenes/mdp3.jpg";
 
 function LandingPage() {
 
@@ -24,8 +25,8 @@ function LandingPage() {
             <Navbar/>
 
             <div className='cont2'>
-                <div className='contImagTexto'>
-
+                {/* cont -> texto1 -> gif -> texto2 -> btns */}
+                <div className='contImagTexto'>                    
                     <div className='contTexto1'>
                         <h3 className='texto1'>Full Stack Developer</h3>
                     </div>
@@ -35,6 +36,7 @@ function LandingPage() {
                     <div className='contTexto2'>
                         <h2 className='texto1' >Marcos Forastere</h2>
                     </div>
+                    
                     {/* btn personales */}
                     <div className='contBtnPersonales'>
                         <a href="#proyectos">
@@ -48,14 +50,14 @@ function LandingPage() {
                         </a>
                     </div>
 
-                    {/* btn geoloc */}
+                    {/* btn geoloc  -> conoce mi ciudad y sus respectivos Modal*/}
                     <div className='contLocalizImg'>
                             {/* btn lanza modal */}
                             <button type="button" class="btn btnGeoloc" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <LocationOnIcon/> Argentina, Bs As, Mar del Plata
                             </button>
                             {/* btn lanza modal2 */}
-                            <button type="button" class="btn btnGeoloc" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+                            <button type="button" class="btn btnGeoloc" data-bs-toggle="modal" data-bs-target="#exampleModal2"> 
                                 - Conoce mi ciudad -
                             </button>                
 
@@ -75,17 +77,17 @@ function LandingPage() {
                             </div>
 
                         {/* Modal2 */}
-                        <div class="modal fade modal-lg modal1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade modal-lg modal1" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel2">
                                             Galeria de fotos de la ciudad de Mar del Plata
                                         </h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <GeolocalizacionMDP/>
+                                        <Carrusel imag1={mdp1} imag2={mdp2} imag3={mdp3}/>
                                     </div>
                                 </div>
                             </div>

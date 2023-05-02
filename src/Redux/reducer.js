@@ -33,16 +33,14 @@ const initialState = {
             imag2: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682639378/ScreenShot060_qexwfu.bmp',
             imag3: 'https://res.cloudinary.com/da655b7xh/image/upload/v1682635512/ScreenShot059_bl4u9j.bmp',
         },
-    ],
-    load: false
+    ],    
 };
 
 export default function rootReducer(state = initialState, action){
     switch(action){
         case GET_PROYECTS:
             return{
-                ...state,
-                
+                ...state,                
             }
         default:
             return state;
