@@ -1,6 +1,8 @@
 import React from 'react';
 import "./landing.css";
 import "./botones.scss";
+/* para animaciones */
+import 'animate.css';
 import Navbar from '../NavBar';
 import gif from './program.gif';
 import GeolocalizacionMDP from '../GeolocalizacionMDP';
@@ -34,7 +36,7 @@ function LandingPage() {
                         <img src={gif} alt='not founf gif' className='gifP'/>
                     </div>
                     <div className='contTexto2'>
-                        <h2 className='texto1' >Marcos Forastere</h2>
+                        <h2 class="nombre animate__animated animate__bounce" >Marcos Forastere</h2>
                     </div>
                     
                     {/* btn personales */}

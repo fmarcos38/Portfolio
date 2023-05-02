@@ -1,6 +1,7 @@
 import React from 'react';
 import "./navbar.css";
-
+/* para animaciones */
+import 'animate.css';
 import {Instagram} from '@mui/icons-material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -17,30 +18,29 @@ function Navbar() {
         <div className='contNavbar'>
             {/* redes */}
             <div className='contItemsRedes'>
-                <a href='https://www.instagram.com/fmarcos_casla/' className='iconoInsta'>
+                <a href='https://www.instagram.com/fmarcos_casla/' class='animate__animated animate__bounceInLeft iconoInsta'>
                     <Instagram />
                 </a>
-                <a href='https://github.com/fmarcos38' className='itemGithub'>
+                <a href='https://github.com/fmarcos38' class='animate__animated animate__bounceInLeft iconoInsta'>
                     <GitHubIcon/>
                 </a>
-                <a href='https://www.linkedin.com/in/marcos-forastiere-9b238328/' className='itemLinkedin'>
+                <a href='https://www.linkedin.com/in/marcos-forastiere-9b238328/' class='animate__animated animate__bounceInLeft iconoInsta'>
                     <LinkedInIcon/>
                 </a>
             </div>
 
             {/* contactar */}
-            <div className='contItemContacto'>                
-                <div className='itemTextoCont'>Contacto</div>
-                <div>
-                    <a href='#contacto' className='itemContacto'>
-                        <MailIcon/>
-                    </a>
-                </div>           
-                <div>
-                    <a href={whatsapp} className='itemWhatsApp'>
+            <div className='contItemContacto'>             
+                    <div class='animate__animated animate__bounceInRight'>
+                        <a href='#contacto' class='itemContacto'>
+                            <MailIcon/>
+                        </a>
+                    </div>           
+                    <div class='animate__animated animate__bounceInRight'>
+                        <a href={whatsapp} class='itemWhatsApp'>
                         <WhatsAppIcon/>
-                    </a>
-                </div>
+                        </a>
+                    </div>
             </div>
         </div>
     )

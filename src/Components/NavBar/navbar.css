@@ -28,25 +28,6 @@
     animation-duration: 4s;
     animation-name: slidein;
 }
-/*animación*/
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 100%
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-
-    /* 75% {
-        font-size: 300%;
-        margin-left: 25%;
-        width: 150%;
-    } */
-}
-/* -------------------------------- */
 
 
 @media screen and (max-width: 300px){
