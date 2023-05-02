@@ -1,6 +1,6 @@
 import React from 'react'
 import "./estilos.css";
-import Carrusel from '../Carrusel';
+import CarruselP from '../CarruselP';
 
 import LinkIcon from '@mui/icons-material/Link';
 
@@ -15,7 +15,7 @@ function CardProyecto({titulo, descripcion, tecnologiasUtilizadas, linkGithubFro
 
         <div class="card-body">
             {/* carrusel */}
-            <Carrusel imag1={imag1} imag2={imag2} imag3={imag3}/>
+            <CarruselP imag1={imag1} imag2={imag2} imag3={imag3}/>
             <p className='tituloD'>Descripción:</p>
             <p>{descripcion}</p>
             <p className='tituloD'>Tecnologías utilizadas:</p>
