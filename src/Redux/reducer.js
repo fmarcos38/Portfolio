@@ -3,6 +3,17 @@ import { GET_PROYECTS } from "./Actions/actionType";
 const initialState = {
     proyectos:[
         {
+            titulo: 'AppWeb de recetas', 
+            descripcion: 'Aplicación web responsive de recetas, funcionalidad CRUD, administra 2 tipos de usuarios(cliente y admin), cliente puede guardar en favoritos, admin las opcs del CRUD. Funcionalidad boton día/noche, y otro PARA la estetica(Barbie/Ken) ofrece dist colores.',
+            tecnologiasUtilizadas: 'FRONT: Html - CSS - Materia UI - React - Redux - Javascript - BACK: Microservicios - Docker - Deployado en Máquina Virtual en google Cloud - Node - MongoDB - Express - Cloudinary - JWT - NodeMail - Multer - NPM',
+            linkGithubFront: 'https://github.com/fmarcos38/AppWeb-Recetas-Front',
+            linkGithubBack: 'https://github.com/fmarcos38/Backend-appWeb-Recetas',
+            linkURL: 'https://app-web-recetas-front.vercel.app',
+            imag1: 'https://res.cloudinary.com/da655b7xh/image/upload/v1697132465/Captura_de_pantalla_2023-09-25_143502_cnuepx.png',
+            imag2: 'https://res.cloudinary.com/da655b7xh/image/upload/v1697132324/Captura_de_pantalla_2023-09-25_143523_huojdw.png',
+            imag3: 'https://res.cloudinary.com/da655b7xh/image/upload/v1697132465/Captura_de_pantalla_2023-09-25_143857_mwyrw6.png',
+        },
+        {
             titulo: 'E-commerce', 
             descripcion: 'E-commerse para un café al paso. Funcionalidades: loguin, 2 tipos de barras de navegación(usuario-admin), CRUD para productos, pasarela de pagos Mercadopago, envio de email, etc',
             tecnologiasUtilizadas: 'Html - CSS - Materia UI - React - Redux - Javascript - Node - MongoDB - Express - Mercadopago - Cloudinary - JWT - NodeMail - Multer - NPM',
