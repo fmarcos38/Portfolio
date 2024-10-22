@@ -51,7 +51,7 @@ const initialState = {
         },
         {
             titulo: 'Landing Page - Agencia de motos', 
-            descripcion: 'Funcionalidades: el cliente solicitó solo una landing, muestra las marcas trabajasdas, posee filtros por tipo de producto, y detalle del producto',
+            descripcion: 'Funcionalidades: el cliente solicitó solo una landing, muestra las marcas trabajadas, posee filtros por tipo de producto, y detalle del producto',
             tecnologiasUtilizadas: 'Html - CSS - Materia UI - React - Redux - Javascript - Node - Firebase - NPM',
             linkGithubFront: 'https://github.com/fmarcos38/Frontend-MotosPR',
             linkURL: 'https://motosperaltaramos-75437.web.app/',
