@@ -12,13 +12,12 @@ function About() {
                 <span className='aboutMe'>
                     👋 ¡Hola, soy Marcos! En agosto del 2021 di un giro en mi vida y comencé mis estudios 
                     en la academia Soy Henry para formarme como Programador Full-Stack!. Con más de 800 horas teórico/prácticas 💥, 
-                    desde entonces no ha pasado un día en el que programe (salvo los domingos jeje). 
-                    Actualmente estoy realizando un curso PHP, próximamente en Python, docker ⚡️ 
+                    desde entonces no ha pasado un día en el que no programe (salvo los domingos jeje). 
+                    Actualmente estoy realizando cursos en la plataforma PLATZI, tanto de frontend como de backend ⚡️ 
                     Soy una persona paciente, proactiva, autodidacta, apasionado por la tecnología, los viajes, el deporte y la música,
                     flexible, sociable y con capacidad de liderazgo. 
                     Por todo ello, creo que puedo contribuir de manera significativa al éxito de su empresa.
-                    ¡Sé trabajar muy bien en equipo y me encanta estar siempre detrás de las 
-                    últimas tendencias y tecnología de punta! 💻
+                    ¡Sé trabajar muy bien en equipo y siempre atento a las últimas tendencias y tecnologías! 💻
                 </span>
                 </div>                
             </div>

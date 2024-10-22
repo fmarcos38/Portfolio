@@ -17,6 +17,7 @@ import Carrusel from '../Carrusel';
 import mdp1 from "../../imagenes/mdp1.jpg";
 import mdp2 from "../../imagenes/mdp2.jpg";
 import mdp3 from "../../imagenes/mdp3.jpg";
+//import Curriculum from '../Curriculum';
 
 function LandingPage() {
 
@@ -36,7 +37,7 @@ function LandingPage() {
                         <img src={gif} alt='not founf gif' className='gifP'/>
                     </div>
                     <div className='contTexto2'>
-                        <h2 class="nombre animate__animated animate__bounce" >Marcos Forastere</h2>
+                        <h2 class="nombre" >Marcos Forastere</h2>
                     </div>
                     
                     {/* btn personales */}
@@ -117,6 +118,11 @@ function LandingPage() {
                 <About/>
             </div>
 
+            {/* CV */}
+            {/* <div id="curriculum">
+                <h2 className='tituloSkills'>My CV</h2>
+                <Curriculum/>
+            </div> */}
             {/* formulario de contacto */}
             <div id="contacto">
                 <FormularioContacto/>

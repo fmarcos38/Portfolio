@@ -1,9 +1,8 @@
 import React, { useRef, useState } from 'react';
-import "./estilos.css";
 import "../LandingPage/botones.scss";
 /* envio de email */
-import emailjs from '@emailjs/browser';
-
+import emailjs from 'emailjs-com';
+import "./estilos.css";
 
 function FormularioContacto() {
 
@@ -12,25 +11,36 @@ function FormularioContacto() {
     const [email, setEmail] = useState("");
     const [asunto, setAsunto] = useState("");
     const [mensj, setMensj] = useState("");
-
+    const [isSent, setIsSent] = useState(false);
+    const [error, setError] = useState('');
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, form.current, process.env.REACT_APP_PUBLIC)
+        if(nombre && email && asunto && mensj){
+            emailjs.sendForm(
+                process.env.REACT_APP_SERVICE, 
+                process.env.REACT_APP_TEMPLATE, 
+                form.current, 
+                process.env.REACT_APP_PUBLIC
+            )
             .then((result) => {
                 console.log(result.text);
-                alert("Mail enviado !!");
+                setIsSent(true);
                 setNombre("");
                 setEmail("");
                 setAsunto("");
                 setMensj("");
+                alert("Mail enviado !!");
             }, (error) => {
                 console.log(error.text);
-                alert("Error al enviar !!");
-            });            
-        };
+                setError('Error al enviar el mensaje. Intenta de nuevo más tarde.');
+            });
+        }else{
+            alert("Complete todos los datos !!")
+        }
+    };
 
 
     return (
@@ -38,21 +48,50 @@ function FormularioContacto() {
             <div>
                 <h3 className='tituloForm'>Formulario de contacto</h3>
             </div>
-            <div className='divContForm'>
-            <form ref={form} onSubmit={sendEmail} className='contForm'>
-                <label for='nombre'>Nombre:</label><br></br> 
-                <input type='text' id='nombre' value={nombre} name='nombre' onChange={(e) => setNombre(e.target.value)}/><br></br>                 
-                <label for='email'>Email:</label><br></br> 
-                <input type='email' id='email' name='email' value={email} onChange={(e) => setEmail(e.target.value)}/><br></br>                 
-                <label for='asunto'>Asunto:</label><br></br> 
-                <input type='text' id='asunto' name='asunto' value={asunto} onChange={(e) => {setAsunto(e.target.value)}}/><br></br>
-                <label for='mensaje'>Mensaje:</label><br></br> 
-                <textarea id='mensaje' name='mensaje' value={mensj} onChange={(e) => setMensj(e.target.value)}/><br></br>
+            {
+                isSent ? (
+                    <p>Gracias!! Tu mensaje ha sido enviado.</p>
+                ) : (
+                    <div className='divContForm'>
+                        <form ref={form} onSubmit={sendEmail} className='contForm'>
+                            <label for='nombre'>Nombre:</label><br></br>
+                            <input
+                                type='text'
+                                name="user_name"
+                                value={nombre}
+                                onChange={(e) => setNombre(e.target.value)}
+                            />
+                            <br></br>
+                            <label for='email'>Email:</label><br></br>
+                            <input
+                                type='email'
+                                name="user_email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <br></br>
+                            <label for='asunto'>Asunto:</label><br></br>
+                            <input
+                                type='text'
+                                id='asunto'
+                                value={asunto}
+                                onChange={(e) => { setAsunto(e.target.value) }}
+                            />
+                            <br></br>
+                            <label for='mensaje'>Mensaje:</label><br></br>
+                            <textarea
+                                name="message"
+                                value={mensj}
+                                onChange={(e) => setMensj(e.target.value)}
+                            />
+                            <br></br>
 
-                <button type='submit' className='btnEnviar'>Enviar</button>
-            </form>
-            </div>
-            
+                            <button type='submit' className='btnEnviar'>Enviar</button>
+                        </form>
+                    </div>
+                )
+            }
+            {error && <p>{error}</p>}       
         </div>
     )
 }

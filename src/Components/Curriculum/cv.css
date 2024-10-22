@@ -1,0 +1,23 @@
+.conGralCV{
+    display:flex;
+    justify-content: center;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+.contCV{
+    width: 85%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.contIzq{    
+    background-color: aliceblue;
+}
+.contDer{
+    
+    background-color: rgb(102, 161, 213);
+}
+.iconCheck{
+    font-size:larger;
+}

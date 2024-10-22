@@ -1,12 +1,11 @@
-
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+
 /* import Navbar from './Components/NavBar'; */
 import LandingPage from './Components/LandingPage';
 import GeolocalizacionMDP from "./Components/GeolocalizacionMDP";
 import CardProyecto from './Components/CardProyecto';
 import ListaProyectos from './Components/ListaProyectos';
-
+import './App.css';
 
 
 function App() {
