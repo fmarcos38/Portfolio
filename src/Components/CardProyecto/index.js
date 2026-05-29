@@ -3,35 +3,53 @@ import "./estilos.css";
 import CarruselP from '../CarruselP';
 
 import LinkIcon from '@mui/icons-material/Link';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
-function CardProyecto({titulo, descripcion, tecnologiasUtilizadas, linkGithubFront, linkGithubBack, linkURL, imag1, imag2, imag3}) {
+const techKeywords = ['React', 'Redux', 'JavaScript', 'Node', 'Express', 'MongoDB', 'JWT', 'Material UI', 'Cloudinary', 'Firebase', 'Docker', 'Vercel'];
 
+function CardProyecto({ titulo, descripcion, tecnologiasUtilizadas, linkGithubFront, linkGithubBack, linkURL, imag1, imag2, imag3, imag4, imag5, carouselId }) {
+    const tags = techKeywords.filter((tech) => tecnologiasUtilizadas?.toLowerCase().includes(tech.toLowerCase()));
 
     return (
-    <div class="card text-center contCard">
-        <div class="card-header">
-            <h3>{titulo}</h3>
-        </div>
+        <article className="contCard">
+            <div className="projectMedia">
+                <CarruselP imag1={imag1} imag2={imag2} imag3={imag3} imag4={imag4} imag5={imag5} carouselId={carouselId} titulo={titulo} />
+            </div>
 
-        <div class="card-body">
-            {/* carrusel */}
-            <CarruselP imag1={imag1} imag2={imag2} imag3={imag3}/>
-            <p className='tituloD'>Descripción:</p>
-            <p>{descripcion}</p>
-            <p className='tituloD'>Tecnologías utilizadas:</p>
-            <p>{tecnologiasUtilizadas}</p>        
-        </div>
+            <div className="projectContent">
+                <h3>{titulo}</h3>
+                <p className='projectDescription'>{descripcion}</p>
 
-        <div class="card-footer text-muted">
-        <a href={linkGithubFront} className='links'><LinkIcon className='links'/>Link Github Frontend</a>
-            <br></br>
-            {
-                linkGithubBack && <a href={linkGithubBack} className='links'><LinkIcon className='links'/>Link Github Backend</a>
-            }
-            <br></br>
-            <a href={linkURL} className='links'><LinkIcon className='links'/>Link Página</a>
-        </div>
-    </div>
+                {tags.length > 0 && (
+                    <div className='techTags'>
+                        {tags.map((tech) => (
+                            <span key={tech}>{tech}</span>
+                        ))}
+                    </div>
+                )}
+
+                <p className='tituloD'>Tecnologias utilizadas</p>
+                <p className='projectTechText'>{tecnologiasUtilizadas}</p>
+            </div>
+
+            <div className="projectActions">
+                {linkURL && (
+                    <a href={linkURL} className='links'>
+                        <LinkIcon /> Demo
+                    </a>
+                )}
+                {linkGithubFront && (
+                    <a href={linkGithubFront} className='links'>
+                        <GitHubIcon /> Frontend
+                    </a>
+                )}
+                {linkGithubBack && (
+                    <a href={linkGithubBack} className='links'>
+                        <GitHubIcon /> Backend
+                    </a>
+                )}
+            </div>
+        </article>
     )
 }
 

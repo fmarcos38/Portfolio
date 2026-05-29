@@ -1,19 +1,23 @@
 .contListaP{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
 }
-.contListaP2{    
-    width: 85%;
-    background-color: black;
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 0;
+.contListaP2{
+    min-width: 0;
+    display: flex;
 }
 
-@media screen and (max-width: 650px){
-    .contListaP2{    
-        width: 90%;
+@media screen and (max-width: 900px){
+    .contListaP{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .contListaP{
+        width: min(100% - 1.25rem, 1120px);
     }
 }

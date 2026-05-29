@@ -1,41 +1,35 @@
 import React from 'react'
 import "./estilos.css";
 
-import logoHtml from "../../imagenes/html.png";
-import logoCss from "../../imagenes/CSS3.jpg";
-import logoReact from "../../imagenes/react.jpg";
-import logoJS from "../../imagenes/JavaScript.png";
-import logoRedux from "../../imagenes/Redux.png";
-import logoBootstrap from "../../imagenes/bootstrap.png";
-import logoMaterial from "../../imagenes/materialUI.png";
-import logoNode from "../../imagenes/node.png";
-import logoExpress from "../../imagenes/express.png";
-import logoMongo from "../../imagenes/mongodb.png";
-import logoSql from "../../imagenes/sql.jpg";
-import logoPostman from "../../imagenes/postman.webp";
-import logoNPM from "../../imagenes/npm.png";
-import logoGit from "../../imagenes/GitHub.jpg";
-
+const skills = [
+    { nombre: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
+    { nombre: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
+    { nombre: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
+    { nombre: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
+    { nombre: 'Redux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg' },
+    { nombre: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg' },
+    { nombre: 'Material UI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg' },
+    { nombre: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg' },
+    { nombre: 'Express', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg' },
+    { nombre: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg' },
+    { nombre: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
+    { nombre: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg' },
+    { nombre: 'NPM', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg' },
+    { nombre: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' },
+];
 
 function MuestraSkills() {
     return (
-        <div class='contGralSkills'>
-            
-            <div class='contSkills'>
-                <img src={logoHtml} alt='not found' className='logoJS'/>
-                <img src={logoCss} alt='not found' className='logoJS'/>
-                <img src={logoJS} alt='not found' className='logoJS'/>
-                <img src={logoReact} alt='not found' className='logoReact'/>
-                <img src={logoRedux} alt='not found' className='logoRedux'/>
-                <img src={logoBootstrap} alt='not found' className='logoJS'/>
-                <img src={logoMaterial} alt='not found' className='logoRedux'/>
-                <img src={logoNode} alt='not found' className='logoJS'/>
-                <img src={logoExpress} alt='not found' className='logoJS'/>
-                <img src={logoMongo} alt='not found' className='logoJS'/>
-                <img src={logoSql} alt='not found' className='logoJS'/>
-                <img src={logoPostman} alt='not found' className='logoJS'/>
-                <img src={logoNPM} alt='not found' className='logoRedux'/>
-                <img src={logoGit} alt='not found' className='logoJS'/>
+        <div className='contGralSkills'>
+            <div className='contSkills'>
+                {skills.map((skill) => (
+                    <div className='skillItem' key={skill.nombre}>
+                        <div className='skillIconBox'>
+                            <img src={skill.icon} alt={skill.nombre} />
+                        </div>
+                        <span>{skill.nombre}</span>
+                    </div>
+                ))}
             </div>
         </div>
     )
